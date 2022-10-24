@@ -11,14 +11,26 @@ const MessageLayout = styled.span`
 	color: var(--color-white);
 	background-color: var(--color-pink);
 	font-family: Gilroy-Extrabold;
-	font-size: 46px;
-  
+	font-size: 52px;
 `;
+
+const MessageWrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 55%;
+	/* line-height: 1rem; */
+`;
+
+
+
 const Message = () => {
 	return (
 		<MessageLayout>
-			I am a bespoke web developer looking to facilitate the creation of modern
-			and aesthetically pleasing websites
+			<MessageWrapper>
+				Especializado en proyectos a medida, enfocado en el desarrollo de websites modernos y atractivos.
+			</MessageWrapper>
 		</MessageLayout>
 	);
 };

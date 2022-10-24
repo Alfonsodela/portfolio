@@ -13,10 +13,11 @@ import Competencies from './components/Competencies';
 const App = () => {
   return (
     <>
-      <NavScreen/>
+      
       <External/>
-      <NavPanel/>
       <Home/>
+      <NavScreen/>
+      <NavPanel/>
       <Message/>
       <Projects/>
       <Divider/>
