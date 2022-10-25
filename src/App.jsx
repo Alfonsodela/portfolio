@@ -15,9 +15,10 @@ const App = () => {
     <>
       
       <External/>
+      <NavPanel/>
       <Home/>
       <NavScreen/>
-      <NavPanel/>
+      
       <Message/>
       <Projects/>
       <Divider/>
