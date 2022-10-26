@@ -29,7 +29,7 @@ const Message = () => {
 	return (
 		<MessageLayout>
 			<MessageWrapper>
-				Especializado en proyectos a medida, enfocado en el desarrollo de websites modernos y atractivos.
+				Especializado en proyectos a medida, enfocado en el desarrollo de websites modernas y atractivas.
 			</MessageWrapper>
 		</MessageLayout>
 	);

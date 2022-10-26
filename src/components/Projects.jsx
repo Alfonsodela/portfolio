@@ -7,7 +7,7 @@ const LayoutProjects = styled.div`
 
 const Projects = () => {
   return (
-    <LayoutProjects>Projects</LayoutProjects>
+    <LayoutProjects id="projects">Projects</LayoutProjects>
   )
 }
 

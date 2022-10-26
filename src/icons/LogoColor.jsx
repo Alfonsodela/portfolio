@@ -1,0 +1,105 @@
+import * as React from "react";
+const LogoColor = (props) => (
+  <svg
+    width="180px"
+    height="180px"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    viewBox="0 0 500 375.68"
+    style={{
+      enableBackground: "new 0 0 500 375.68",
+    }}
+    xmlSpace="preserve"
+    role="img"
+    {...props}
+  >
+    <style type="text/css">
+      {
+        "\n\t.st0{fill:url(#SVGID_1_);}\n\t.st1{fill:url(#SVGID_00000150064387145223112790000006936358075725855932_);}\n\t.st2{fill:url(#SVGID_00000131364078144501997920000007056640634575543962_);}\n\t"
+      }
+    </style>
+    <linearGradient
+      id="SVGID_1_"
+      gradientUnits="userSpaceOnUse"
+      x1={95.7168}
+      y1={233.0307}
+      x2={396.5442}
+      y2={233.0307}
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#C41D56",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#4A2331",
+        }}
+      />
+    </linearGradient>
+    <path
+      className="st0"
+      d="M396.54,218.46c0,0-78.51-17.59-151.87-17.59S95.72,218.46,95.72,218.46v46.73c0,0,61.52-16.23,148.95-16.23 c94.97,0,151.87,16.23,151.87,16.23V218.46z"
+    />
+    <linearGradient
+      id="SVGID_00000030448766062978136830000007261413495415270819_"
+      gradientUnits="userSpaceOnUse"
+      x1={43.7859}
+      y1={185.2638}
+      x2={280.5542}
+      y2={185.2638}
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#DC1F5F",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#2A2325",
+        }}
+      />
+    </linearGradient>
+    <path
+      style={{
+        fill: "url(#SVGID_00000030448766062978136830000007261413495415270819_)",
+      }}
+      d="M43.79,338.39h64.08 c0,0-0.75-49.28,0-103.2c0.95-67.67-7.78-143.14,52.64-143.14c66.7,0,54.3,93.6,54.3,143.14c0,54.04-0.83,103.2-0.83,103.2h66.58 c0,0,0-104.65,0-181.63S231.24,32.13,160.51,32.13S43.79,80.78,43.79,156.76C43.79,238.32,43.79,338.39,43.79,338.39z"
+    />
+    <linearGradient
+      id="SVGID_00000121256011067185701840000005889741120274333825_"
+      gradientUnits="userSpaceOnUse"
+      x1={213.9761}
+      y1={185.2638}
+      x2={451.899}
+      y2={185.2638}
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#DC1F5F",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#2A2325",
+        }}
+      />
+    </linearGradient>
+    <path
+      style={{
+        fill: "url(#SVGID_00000121256011067185701840000005889741120274333825_)",
+      }}
+      d="M213.98,338.39h66.58 c0,0-0.75-49.28,0-103.2c0.95-67.67-9.13-143.14,51.3-143.14c66.7,0,51.86,76.05,53.47,143.14c1.29,54.02,0,103.2,0,103.2h66.58 c0,0,0-104.65,0-181.63S402.59,32.13,331.85,32.13S215.13,80.78,215.13,156.76C215.13,238.32,213.98,338.39,213.98,338.39z"
+    />
+  </svg>
+);
+export default LogoColor;

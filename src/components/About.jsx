@@ -7,7 +7,7 @@ export const AboutLayout = styled.div`
 
 const About = () => {
   return (
-    <AboutLayout>About</AboutLayout>
+    <AboutLayout id='about'>About</AboutLayout>
   )
 }
 

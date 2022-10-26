@@ -7,7 +7,7 @@ const ContactCompetencies = styled.div`
 
 const Contact = () => {
   return (
-    <ContactCompetencies>Contact</ContactCompetencies>
+    <ContactCompetencies id="contact">Contact</ContactCompetencies>
   )
 }
 
