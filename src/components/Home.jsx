@@ -1,19 +1,21 @@
 import {
 	HomeLayout,
-	HomeTitle,
+	HomeSubTitle,
 	NavHome,
 	NavHomeGuion,
-	NavHomeAbout
+	NavHomeAbout,
+	HomeTitle
 } from '../styles/layouts/HomeLayout';
 import LogoColor from '../icons/LogoColor';
-import { IconContext } from 'react-icons';
+import { desktopUp } from '../styles/breakpoints/breakpoints';
+
 
 const Home = () => {
 	return (
 		<>
 			<HomeLayout id="home">
-				Alfonso de la Manzanara
-				<HomeTitle>Full Stack Developer</HomeTitle>
+				<HomeTitle>Alfonso de la Manzanara</HomeTitle>
+				<HomeSubTitle>Full Stack Developer</HomeSubTitle>
 				<LogoColor />
 				<NavHome >
 					<NavHomeAbout href="#about">About </NavHomeAbout>

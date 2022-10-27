@@ -10,25 +10,24 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Competencies from './components/Competencies';
 
-const App = () => {
-  return (
-    <>
-      
-      <External/>
-      <NavPanel/>
-      <Home/>
-      <NavScreen/>
-      
-      <Message/>
-      <Projects/>
-      <Divider/>
-      <About/>
-      <Competencies/>
-      <Contact/>
-      <Footer/>
 
-    </>
-  )
-}
+const App = () => {
+	return (
+		<>
+			<External />
+			<NavPanel />
+			<Home />
+			<NavScreen />
+
+			<Message />
+			<Projects />
+			<Divider />
+			<About />
+			<Competencies />
+			<Contact />
+			<Footer />
+		</>
+	);
+};
 
 export default App;

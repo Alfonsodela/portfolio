@@ -1,29 +1,4 @@
-import styled from '@emotion/styled';
-
-const MessageLayout = styled.span`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: 100%;
-	height: 100vh;
-
-	color: var(--color-white);
-	background-color: var(--color-pink);
-	font-family: Gilroy-Extrabold;
-	font-size: 52px;
-`;
-
-const MessageWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: 55%;
-	/* line-height: 1rem; */
-`;
-
-
+import { MessageLayout, MessageWrapper} from '../styles/layouts/MessageLayout';
 
 const Message = () => {
 	return (

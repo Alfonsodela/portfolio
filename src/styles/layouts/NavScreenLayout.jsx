@@ -10,7 +10,7 @@ export const NavScreenLayout = styled.div`
 	z-index: 998;
 	top: 0;
 	left: ${({ open }) => (open ? '0' : '-100%')};
-	transition: 0.5s all ease;
+	transition: 5s all ease;
 
 	background-color: var(--color-white);
 `;

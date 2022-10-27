@@ -11,6 +11,7 @@ export const ExternalLayout = styled.div`
     z-index: 999;
 
     right: 0px;
+  
     padding: 14px;
     border-bottom-left-radius: 4px;
 
