@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { mobileUp, tabletUp } from '../breakpoints/breakpoints';
 
 export const HomeLayout = styled.div`
 	display: flex;
@@ -20,17 +21,12 @@ export const HomeTitle = styled.span`
 	background-color: var(--color-black);
 	white-space: nowrap;
 	font-family: Gilroy-Extrabold;
-	
 
-	@media screen and (min-width: 420px) {
+	${mobileUp} {
 		font-size: 28px;
 	}
 
-	@media screen and (min-width: 768px) {
-		font-size: 54px;
-	}
-
-	@media screen and (min-width: 996px) {
+	${tabletUp} {
 		font-size: 54px;
 	}
 `;
@@ -44,15 +40,11 @@ export const HomeSubTitle = styled.span`
 
 	margin-top: 1rem;
 
-	@media screen and (min-width: 420px) {
+	${mobileUp} {
 		font-size: 0.75rem;
 	}
 
-	@media screen and (min-width: 768px) {
-		font-size: 1.25rem;
-	}
-
-	@media screen and (min-width: 996px) {
+	${tabletUp} {
 		font-size: 1.25rem;
 	}
 `;

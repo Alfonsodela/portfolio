@@ -1,14 +1,66 @@
-import styled from '@emotion/styled';
-
-const LayoutProjects = styled.div`
-  color: var(--color-black);
-  background-color: var(--color-white);
-`
+import petLove from '../assets/petLove.jpg';
+import {
+	ProjectsLayout,
+	ProjectsWrapper,
+	Article,
+	InnerContainer,
+	Img,
+	ProjectName,
+	ProjectOverlay
+} from '../styles/layouts/ProjectsLayout';
 
 const Projects = () => {
-  return (
-    <LayoutProjects id="projects">Projects</LayoutProjects>
-  )
-}
+	return (
+		<ProjectsLayout id='projects'>
+			<h1>Proyectos</h1>
+			<ProjectsWrapper>
+				<Article className='project1'>
+					<InnerContainer className='project-inner-container'>
+						<Img src={petLove} />
+					</InnerContainer>
+					<ProjectName>Pet Love</ProjectName>
+					<ProjectOverlay>
+						<button>Live Demo</button>
+					</ProjectOverlay>
+				</Article>
+				<Article className='project1'>
+					<InnerContainer className='project-inner-container'>
+						<Img src={petLove} />
+					</InnerContainer>
+					<ProjectName>Pet Love</ProjectName>
+					<div className='overlay'>{/* <a href>Pet Love</a> */}</div>
+				</Article>
+				<Article className='project1'>
+					<InnerContainer className='project-inner-container'>
+						<Img src={petLove} />
+					</InnerContainer>
+					<ProjectName>Pet Love</ProjectName>
+					<div className='overlay'>{/* <a href>Pet Love</a> */}</div>
+				</Article>
+				<Article className='project1'>
+					<InnerContainer className='project-inner-container'>
+						<Img src={petLove} />
+					</InnerContainer>
+					<ProjectName>Pet Love</ProjectName>
+					<div className='overlay'>{/* <a href>Pet Love</a> */}</div>
+				</Article>
+				<Article className='project1'>
+					<InnerContainer className='project-inner-container'>
+						<Img src={petLove} />
+					</InnerContainer>
+					<ProjectName>Pet Love</ProjectName>
+					<div className='overlay'>{/* <a href>Pet Love</a> */}</div>
+				</Article>
+				<Article className='project1'>
+					<InnerContainer className='project-inner-container'>
+						<Img src={petLove} />
+					</InnerContainer>
+					<ProjectName>Pet Love</ProjectName>
+					<div className='overlay'>{/* <a href>Pet Love</a> */}</div>
+				</Article>
+			</ProjectsWrapper>
+		</ProjectsLayout>
+	);
+};
 
 export default Projects;

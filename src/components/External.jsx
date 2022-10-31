@@ -5,7 +5,7 @@ import { IconContext } from 'react-icons';
 const External = () => {
 	return (
 		<ExternalLayout>
-			<IconContext.Provider value={{ style: { fontSize: '1.5em', color: 'black', hover: 'blue' } }}>
+			<IconContext.Provider value={{ style: { fontSize: '1.5em', color: 'black', hover: 'var(--color-pink)' } }}>
 				<a href='https://github.com/Alfonsodela' rel='noreferrer' target="_blank" ><FaGithub/></a>
 				<a href='https://www.linkedin.com/in/alfonsodelamanzanara/'><FaLinkedin /></a>
 				<FaDribbbleSquare />
