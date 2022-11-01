@@ -12,6 +12,23 @@ export const ProjectsLayout = styled.section`
 	background-color: var(--color-white);
 `;
 
+export const ProjectTitle = styled.span`
+	color: #FF0000;
+	/* background-color: var(--color-black); */
+	white-space: nowrap;
+	font-family: Gilroy-Extrabold;
+	font-size: 54px;
+	margin-bottom: 85px;
+
+	/* ${mobileUp} {
+		font-size: 28px;
+	}
+
+	${tabletUp} {
+		font-size: 54px;
+	} */
+`;
+
 export const ProjectsWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -30,7 +47,7 @@ export const Article = styled.article`
 	min-height: 225px;
 
 	user-select: none;
-	background: var(--color-pink);
+	background: #DA1C5D;
 	border-radius: 0.5rem;
 	opacity: 1;
 	text-align: center;
@@ -50,6 +67,7 @@ export const Img = styled.img`
 	width: 100%;
 	border-radius: 5px;
 	transition: all 500ms;
+	box-shadow: 0 3px 7px 0 rgb(0 0 0 / 25%);
 
 	&:hover {
 		transform: scale(1.65);
