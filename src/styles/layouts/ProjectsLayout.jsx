@@ -13,15 +13,16 @@ export const ProjectsLayout = styled.section`
 	background-color: var(--color-white);
 
 	${mobileUp} {
-		min-height: 2100px;
+		min-height: 2300px;
 	}
 
 	${laptoptopUp} {
-		min-height: 1300px;
+		min-height: 1500px;
 	}
 
 	${desktoptopUp} {
-		min-height: 1000px;
+		margin-top: -50px;
+		min-height: 1200px;
 	}
 
 	
@@ -40,6 +41,10 @@ export const ProjectTitle = styled.span`
 
 	${tabletUp} {
 		font-size: 54px;
+	}
+
+	${laptoptopUp} {
+		margin-top: -80px;
 	}
 `;
 

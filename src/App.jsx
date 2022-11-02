@@ -9,7 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Competencies from './components/Competencies';
-import Hybrid from './icons/Hybrid'
+import Hybrid from './icons/Hybrid';
 
 
 const App = () => {
@@ -21,9 +21,11 @@ const App = () => {
 			<NavScreen />
 
 			<Message />
-			<Hybrid/>
+			<Hybrid />
 			<Projects />
 			<Divider />
+		
+
 			<About />
 			<Competencies />
 			<Contact />

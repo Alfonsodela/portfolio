@@ -1,14 +1,24 @@
-import styled from '@emotion/styled';
-
-const DividerLayout = styled.div`
-  color: var(--color-white);
-  background-color: var(--color-pink);
-`
+import HybridBottom from '../icons/HybridBottom';
+import Keyboard from '../assets/Keyboard';
+import {
+	DividerLayout,
+	KeyboardContainer,
+	HybridBottomContainer
+} from '../styles/layouts/DividerLayout';
 
 const Divider = () => {
-  return (
-    <DividerLayout>Divider</DividerLayout>
-  )
-}
+	return (
+		<>
+			<DividerLayout>
+				<KeyboardContainer>
+					<Keyboard />
+				</KeyboardContainer>
+				<HybridBottomContainer>
+					<HybridBottom />
+				</HybridBottomContainer>
+			</DividerLayout>
+		</>
+	);
+};
 
 export default Divider;

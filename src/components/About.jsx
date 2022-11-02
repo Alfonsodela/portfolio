@@ -1,9 +1,5 @@
 import styled from '@emotion/styled';
-
-export const AboutLayout = styled.div`
-  color: var(--color-white);
-  background-color: var(--color-black);
-`
+import { AboutLayout } from '../styles/layouts/AboutLayout';
 
 const About = () => {
   return (

@@ -25,7 +25,7 @@ const Projects = () => {
 							</InnerContainer>
 							<NameIconContainer>
 								<ProjectName>{title}</ProjectName>
-								<Button href={github}>Demo</Button>
+								<Button href={github}>Github</Button>
 							</NameIconContainer>
 							{/* <ProjectOverlay>
 								<button>Live Demo</button>
