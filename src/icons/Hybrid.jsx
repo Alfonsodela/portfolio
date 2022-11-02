@@ -2,7 +2,7 @@ import * as React from "react";
 const Hybrid = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={1934.189}
+    width='100%'
     height={141.359}
     {...props}
   >
