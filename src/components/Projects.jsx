@@ -9,15 +9,16 @@ import {
 	NameIconContainer
 } from '../styles/layouts/ProjectsLayout';
 import { Button } from '../styles/Button';
+import { FaGithub} from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 import data from '../data/data';
-
 
 const Projects = () => {
 	return (
 		<ProjectsLayout id='projects'>
 			<ProjectTitle>Algunos proyectos...</ProjectTitle>
 			<ProjectsWrapper>
-				{data.map(({ id, img, title, github}) => {
+				{data.map(({ id, img, title, github }) => {
 					return (
 						<Article key={id}>
 							<InnerContainer>
@@ -25,7 +26,19 @@ const Projects = () => {
 							</InnerContainer>
 							<NameIconContainer>
 								<ProjectName>{title}</ProjectName>
-								<Button href={github}>Github</Button>
+								<Button href={github}>
+									<IconContext.Provider
+										value={{
+											style: {
+												fontSize: '1.5em',
+												color: 'black',
+												hover: 'var(--color-pink)'
+											}
+										}}
+									>
+										<FaGithub />
+									</IconContext.Provider>
+								</Button>
 							</NameIconContainer>
 							{/* <ProjectOverlay>
 								<button>Live Demo</button>

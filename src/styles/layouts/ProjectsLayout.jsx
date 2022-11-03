@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
-import { mobileUp, tabletUp, desktoptopUp, laptoptopUp } from '../breakpoints/breakpoints';
+import {
+	mobileUp,
+	tabletUp,
+	desktoptopUp,
+	laptoptopUp
+} from '../breakpoints/breakpoints';
 
 export const ProjectsLayout = styled.section`
 	display: flex;
@@ -24,8 +29,6 @@ export const ProjectsLayout = styled.section`
 		margin-top: -50px;
 		min-height: 1200px;
 	}
-
-	
 `;
 
 export const ProjectTitle = styled.span`
@@ -62,7 +65,7 @@ export const ProjectsWrapper = styled.div`
 		gap: 2rem 2rem;
 	}
 
- 	${laptoptopUp} {
+	${laptoptopUp} {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem 2rem;
@@ -121,9 +124,13 @@ export const NameIconContainer = styled.div`
 	width: 100%;
 `;
 
-export const ProjectName = styled.span`
+export const ProjectName = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 1rem;
-	margin-left: 5px;
+	margin-left: 35px;
 	text-transform: uppercase;
 	font-size: 1.15rem;
 	color: var(--color-white);

@@ -8,9 +8,7 @@ import Divider from './components/Divider';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Competencies from './components/Competencies';
 import Hybrid from './icons/Hybrid';
-
 
 const App = () => {
 	return (
@@ -24,10 +22,9 @@ const App = () => {
 			<Hybrid />
 			<Projects />
 			<Divider />
-		
 
 			<About />
-			<Competencies />
+
 			<Contact />
 			<Footer />
 		</>
