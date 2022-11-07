@@ -4,9 +4,13 @@ import {
 	AboutInner,
 	AboutLayout,
 	Competencies,
+	CompetenciesContainer,
 	ImgProfile,
 	Paragraph,
-	Profile
+	Profile,
+	TextCompetencies,
+	TitleCompetencies,
+	TitleTextCompetencies
 } from '../styles/layouts/AboutLayout';
 import { HomeTitle } from '../styles/layouts/AboutLayout';
 import foto from '../assets/Foto.jpg';
@@ -18,8 +22,8 @@ const About = () => {
 				<HomeTitle>About Me</HomeTitle>
 				<AboutInner>
 					<Profile>
-						<ImgProfile >
-							<img src={foto}/>
+						<ImgProfile>
+							<img src={foto} />
 						</ImgProfile>
 						<p>UBICACION: Sevilla, España</p>
 					</Profile>
@@ -41,11 +45,25 @@ const About = () => {
 				</AboutInner>
 			</AboutContainer>
 			<Competencies>
-				<h3>Competencies</h3>
-				<h5></h5>
-				<p></p>
-				<h5></h5>
-				<p></p>
+				<TitleCompetencies>Competencies</TitleCompetencies>
+				<CompetenciesContainer>
+					<TitleTextCompetencies>FRONTEND:</TitleTextCompetencies>
+					<TextCompetencies>
+						HTML5, CSS3/SCSS/LESS, JavaScript, JSX, React, JSON, XML, Webpack,
+						Unity
+					</TextCompetencies>
+
+					<TitleTextCompetencies>BACKEND:</TitleTextCompetencies>
+					<TextCompetencies>
+						Java, PHP, C#, C, C++, MySQL, Postgre, NodeJS, Express, Nginx,
+						Linux, REST, SOAP, Apache
+					</TextCompetencies>
+
+					<TitleTextCompetencies>OTHER:</TitleTextCompetencies>
+					<TextCompetencies>
+					Illustrator, Photoshop, Adobe XD, Premiere, After Effects, Final Cut, GitHub/GitLab, Jenkins, Agile, Trello
+					</TextCompetencies>
+				</CompetenciesContainer>
 			</Competencies>
 		</AboutLayout>
 	);

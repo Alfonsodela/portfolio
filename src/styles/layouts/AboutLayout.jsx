@@ -93,6 +93,42 @@ export const Competencies = styled.div`
 
 	width: 100%;
 	margin-top: 125px;
+	padding-top: 20px;
+	padding-bottom: 50px;
 
 	background-color: var(--color-pink);
+`;
+
+export const TitleCompetencies = styled.div`
+	margin-top: 60px;
+	font-size: 1.25rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--color-white);
+`;
+
+export const CompetenciesContainer = styled.div`
+	text-align: left;
+	display: inline-block;
+	margin-top: 32px;
+	margin-left: 14px;
+	margin-right: 14px;
+`;
+
+export const TitleTextCompetencies = styled.div`
+	font-size: 1rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--color-white);
+`;
+
+export const TextCompetencies = styled.p`
+	color: hsla(0, 0%, 100%, 0.85);
+	margin-top: 0.4rem;
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+	letter-spacing: 0.15em;
+	font-weight: 400;
 `;
