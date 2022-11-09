@@ -1,13 +1,29 @@
 import styled from '@emotion/styled';
-
-const ContactCompetencies = styled.div`
-  color: var(--color-black);
-  background-color: var(--color-form);
-`
+import { ContactLayout, ContactTitle } from '../styles/layouts/ContactLayout';
 
 const Contact = () => {
   return (
-    <ContactCompetencies id="contact">Contact</ContactCompetencies>
+    <ContactLayout id="contact">
+      <ContactTitle>Contáctame</ContactTitle>
+      <div>
+        <form>
+          <div>
+            <label>Nombre</label>
+            <input/>
+          </div>
+          <div>
+            <label>Email</label>
+            <input/>
+          </div>
+          <div>
+            <label>Mensaje</label>
+            <textarea/>
+          </div>
+          <button>Enviar</button>
+        </form>
+      </div>
+
+    </ContactLayout>
   )
 }
 

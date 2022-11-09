@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { mobileUp, tabletUp } from '../breakpoints/breakpoints';
+import { mobileUp, tabletUp, laptoptopUp } from '../breakpoints/breakpoints';
 
 export const AboutLayout = styled.div`
 	display: flex;
@@ -19,14 +19,16 @@ export const HomeTitle = styled.h1`
 	background-color: var(--color-black);
 	white-space: nowrap;
 	font-family: Gilroy-Extrabold;
-	margin-top: 50px;
+	margin-top: 120px;
 	margin-bottom: 20px;
 
 	${mobileUp} {
+		margin-top: 50px;
 		font-size: 28px;
 	}
 
 	${tabletUp} {
+		margin-top: 90px;
 		font-size: 54px;
 	}
 `;
@@ -38,6 +40,17 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutInner = styled.div`
+	${mobileUp} {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	${laptoptopUp} {
+		flex-direction: row;
+	}
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,12 +63,20 @@ export const AboutInner = styled.div`
 `;
 
 export const Profile = styled.div`
+	${mobileUp} {
+		margin-bottom: 50px;
+		margin-right: 0px;
+	}
+
+	${tabletUp} {
+		margin-right: 50px;
+	}
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	padding: 40px;
-	margin-right: 50px;
+
 	border-radius: 6px;
 	background-color: #1f1f1f;
 `;
@@ -83,6 +104,12 @@ export const Paragraph = styled.p`
 	line-height: 1.6;
 	word-spacing: 5px;
 	color: var(--color-form);
+
+	${mobileUp} {
+		margin: auto;
+		text-align: left;
+		width: 100%;
+	}
 `;
 
 export const Competencies = styled.div`
