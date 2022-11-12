@@ -71,12 +71,11 @@ export const Profile = styled.div`
 	${tabletUp} {
 		margin-right: 50px;
 	}
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	padding: 40px;
-
 	border-radius: 6px;
 	background-color: #1f1f1f;
 `;
