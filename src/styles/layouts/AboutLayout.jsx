@@ -59,7 +59,7 @@ export const AboutInner = styled.div`
 	text-align: left;
 	color: var(--color-white);
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.25rem;
+	font-size: 14px;
 `;
 
 export const Profile = styled.div`
@@ -99,7 +99,7 @@ export const Paragraph = styled.p`
 	margin: auto auto auto 25px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 100;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	word-spacing: 5px;
 	color: var(--color-form);
@@ -127,7 +127,7 @@ export const Competencies = styled.div`
 
 export const TitleCompetencies = styled.div`
 	margin-top: 60px;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -143,7 +143,7 @@ export const CompetenciesContainer = styled.div`
 `;
 
 export const TitleTextCompetencies = styled.div`
-	font-size: 1rem;
+	font-size: 12px;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -154,7 +154,7 @@ export const TextCompetencies = styled.p`
 	color: hsla(0, 0%, 100%, 0.85);
 	margin-top: 0.4rem;
 	margin-bottom: 1.5rem;
-	font-size: 1rem;
+	font-size: 14px;
 	letter-spacing: 0.15em;
 	font-weight: 400;
 `;
