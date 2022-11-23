@@ -69,6 +69,13 @@ export const NavHomeAbout = styled.a`
 		color: var(--color-pink);
 	}
 `;
+
+export const WrappLogoBN = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`
+
 export const NavHomeGuion = styled.span`
 	margin-top: 10px;
 
