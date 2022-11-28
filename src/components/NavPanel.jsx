@@ -10,9 +10,6 @@ import {
 } from '../styles/layouts/NavScreenLayout';
 
 const NavPanel = () => {
-
-	const list = ['home', 'project', 'about']
-	const section = list.map(item => <li>{item}</li>)
 	const [showMenu, setShowMenu] = useState(false);
 	return (
 		<>
@@ -24,12 +21,19 @@ const NavPanel = () => {
 			</NavPanelMenu>
 			<NavScreenLayout open={showMenu}>
 				<MenuItem>
-					<MenuItemLink href='#home' onClick={() => setShowMenu(!showMenu)}>Home</MenuItemLink>
-					<MenuItemLink href='#projects' onClick={() => setShowMenu(!showMenu)}>Projects</MenuItemLink>
-					<MenuItemLink href='#about' onClick={() => setShowMenu(!showMenu)}>About</MenuItemLink>
-					<MenuItemLink href='#contact' onClick={() => setShowMenu(!showMenu)}>Contact</MenuItemLink>
+					<MenuItemLink href='#home' onClick={() => setShowMenu(!showMenu)}>
+						Home
+					</MenuItemLink>
+					<MenuItemLink href='#projects' onClick={() => setShowMenu(!showMenu)}>
+						Projects
+					</MenuItemLink>
+					<MenuItemLink href='#about' onClick={() => setShowMenu(!showMenu)}>
+						About
+					</MenuItemLink>
+					<MenuItemLink href='#contact' onClick={() => setShowMenu(!showMenu)}>
+						Contact
+					</MenuItemLink>
 				</MenuItem>
-				<ul>{section}</ul>
 			</NavScreenLayout>
 		</>
 	);

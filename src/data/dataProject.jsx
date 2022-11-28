@@ -5,7 +5,7 @@ import noted from '../assets/noted.png';
 import arcade from '../assets/Arcade.png';
 import shopeame from '../assets/shopeame.png';
 
-export const data = [
+export const dataProject = [
 	{
 		id: 1,
 		img: portfolio,
@@ -46,4 +46,4 @@ export const data = [
 	
 ];
 
-export default data
+export default dataProject;

@@ -11,14 +11,14 @@ import {
 import { Button } from '../styles/Button';
 import { FaGithub} from 'react-icons/fa';
 import { IconContext } from 'react-icons';
-import data from '../data/data';
+import dataProject from '../data/dataProject';
 
 const Projects = () => {
 	return (
 		<ProjectsLayout id='projects'>
 			<ProjectTitle>Algunos proyectos...</ProjectTitle>
 			<ProjectsWrapper>
-				{data.map(({ id, img, title, github }) => {
+				{dataProject.map(({ id, img, title, github }) => {
 					return (
 						<Article key={id}>
 							<InnerContainer>
