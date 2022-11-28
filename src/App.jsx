@@ -1,4 +1,4 @@
-import NavScreen from './components/NavScreen';
+// import NavScreen from './components/NavScreen';
 import External from './components/External';
 import NavPanel from './components/NavPanel';
 import Home from './components/Home';
@@ -16,7 +16,7 @@ const App = () => {
 			<External />
 			<NavPanel />
 			<Home />
-			<NavScreen />
+			{/* <NavScreen /> */}
 
 			<Message />
 			<Hybrid />
