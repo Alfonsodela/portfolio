@@ -1,5 +1,5 @@
 import { GrMenu } from 'react-icons/gr';
-import { NavPanelMenu } from '../styles/layouts/NavPanelMenu';
+import { NavPanelMenu, BtnNavPanelMenu } from '../styles/layouts/NavPanelMenu';
 import { IconContext } from 'react-icons';
 import { useState } from 'react';
 import {
@@ -15,8 +15,9 @@ const NavPanel = () => {
 		<>
 			<NavPanelMenu>
 				<IconContext.Provider value={{ style: { fontSize: '1.5em' } }}>
-					<GrMenu></GrMenu>
-					<button onClick={() => setShowMenu(!showMenu)}>Hoooooooooola</button>
+					<BtnNavPanelMenu onClick={() => setShowMenu(!showMenu)}>
+						<GrMenu></GrMenu>
+					</BtnNavPanelMenu>
 				</IconContext.Provider>
 			</NavPanelMenu>
 			<NavScreenLayout open={showMenu}>

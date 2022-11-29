@@ -1,11 +1,16 @@
-import { MessageLayout, MessageWrapperWhite, MessageWrapperBlack } from '../styles/layouts/MessageLayout';
+import {
+	MessageLayout,
+	MessageWrapperWhite,
+	MessageWrapperBlack
+} from '../styles/layouts/MessageLayout';
 
 const Message = () => {
 	return (
 		<MessageLayout>
-			<MessageWrapperBlack>Especializado en proyectos a medida,</MessageWrapperBlack>
+			{/* <MessageWrapperBlack></MessageWrapperBlack> */}
 			<MessageWrapperWhite>
-				enfocado en el desarrollo de websites modernas y atractivas.
+				Especializado en proyectos a medida, enfocado en el desarrollo de
+				websites modernas y atractivas.
 			</MessageWrapperWhite>
 		</MessageLayout>
 	);

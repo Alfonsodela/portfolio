@@ -27,12 +27,12 @@ export const ProjectsLayout = styled.section`
 
 	${desktoptopUp} {
 		margin-top: -50px;
-		min-height: 1200px;
+		min-height: 1100px;
 	}
 `;
 
 export const ProjectTitle = styled.span`
-	color: #ff0000;
+	/* color: #ff0000; */
 	white-space: nowrap;
 	font-family: Gilroy-Extrabold;
 	font-size: 54px;

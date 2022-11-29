@@ -15,3 +15,10 @@ export const NavPanelMenu = styled.div`
 
     background-color: var(--color-white);
 `
+
+export const BtnNavPanelMenu = styled.button`
+    width: 10rem;
+    height: 2rem;
+    border: 0;
+    background-color: transparent;
+`
