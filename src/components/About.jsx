@@ -44,7 +44,7 @@ const About = () => {
 					</Paragraph>
 				</AboutInner>
 			</AboutContainer>
-			<Competencies>
+			<Competencies id='competencies'>
 				<TitleCompetencies>Competencies</TitleCompetencies>
 				<CompetenciesContainer>
 					<TitleTextCompetencies>FRONTEND:</TitleTextCompetencies>

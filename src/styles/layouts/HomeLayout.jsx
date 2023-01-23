@@ -49,38 +49,8 @@ export const HomeSubTitle = styled.span`
 	}
 `;
 
-export const NavHome = styled.div`
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-`;
-export const NavHomeAbout = styled.a`
-	margin-top: 10px;
-	text-decoration: none;
-	cursor: pointer;
-	color: var(--color-white);
-	font-family: Poppins, sans-serif;
-	font-weight: 600;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 0.15em;
-
-	&:hover {
-		color: var(--color-pink);
-	}
-`;
-
 export const WrappLogoBN = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-`
-
-export const NavHomeGuion = styled.span`
-	margin-top: 10px;
-
-	color: var(--color-pink);
-	font-weight: 900;
-	padding: 0.75rem;
-	font-size: 16px;
 `;

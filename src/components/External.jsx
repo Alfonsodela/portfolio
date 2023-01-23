@@ -1,15 +1,21 @@
 import { ExternalLayout } from '../styles/layouts/ExternalLayout';
-import { FaGithub, FaLinkedin, FaDribbbleSquare } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
+import {
+	NavExternalLayout,
+	// NavHomeGuion,
+	NavExternalAbout
+} from '../styles/layouts/ExternalLayout';
 
 const External = () => {
 	return (
 		<ExternalLayout>
-			<IconContext.Provider value={{ style: { fontSize: '1.5em', color: 'black', hover: 'var(--color-pink)' } }}>
-				<a href='https://github.com/Alfonsodela' rel='noreferrer' target="_blank" ><FaGithub/></a>
-				<a href='https://www.linkedin.com/in/alfonsodelamanzanara/'><FaLinkedin /></a>
-				<FaDribbbleSquare />
-			</IconContext.Provider>
+			<NavExternalLayout>
+				<NavExternalAbout href='#about'>About </NavExternalAbout>
+				{/* <NavHomeGuion> / </NavHomeGuion> */}
+				<NavExternalAbout href='#projects'>Project </NavExternalAbout>
+				{/* <NavHomeGuion> / </NavHomeGuion> */}
+				<NavExternalAbout href='#competencies'>Competencies </NavExternalAbout>
+				<NavExternalAbout href='#contact'>Contact </NavExternalAbout>
+			</NavExternalLayout>
 		</ExternalLayout>
 	);
 };
