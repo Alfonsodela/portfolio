@@ -9,11 +9,25 @@ import {
 	Paragraph,
 	Profile,
 	TextCompetencies,
+	TextCompetenciesB,
+	TextCompetenciesC,
 	TitleCompetencies,
-	TitleTextCompetencies
+	TitleTextCompetencies,
+	WrapperTech,
+	TitleTech
 } from '../styles/layouts/AboutLayout';
 import { HomeTitle } from '../styles/layouts/AboutLayout';
 import foto from '../assets/Foto.jpg';
+import logoJS from '../assets/JavaScript-logo.png';
+import logoReact from '../assets/React-icon.png';
+import logoAngular from '../assets/Angular_logo.png';
+import logoTypeScript from '../assets/Typescript_logo.png';
+import logoHTML from '../assets/html5-logo.png';
+import logoCSS from '../assets/CSS3_logo.png';
+import logoSASS from '../assets/Sass_.png';
+import logoBootstrap from '../assets/Bootstrap_logo.png';
+import logoNodeJS from '../assets/Node.js_logo.png';
+import logoPHP from '../assets/PHP-logo.png'
 
 const About = () => {
 	return (
@@ -45,15 +59,74 @@ const About = () => {
 				</AboutInner>
 			</AboutContainer>
 			<Competencies id='competencies'>
-				<TitleCompetencies>Competencies</TitleCompetencies>
+				{/* <TitleCompetencies>Competencies</TitleCompetencies> */}
 				<CompetenciesContainer>
-					<TitleTextCompetencies>FRONTEND:</TitleTextCompetencies>
+					{/* <TitleTextCompetencies>FRONTEND:</TitleTextCompetencies> */}
+					
+					<TextCompetenciesB>
+						<WrapperTech>
+							<img src={logoJS} />
+							<TitleTech>JavaScript</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoReact} />
+							<TitleTech>React</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoAngular} />
+							<TitleTech>AngularJS</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoTypeScript} />
+							<TitleTech>TypeScript</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoHTML} />
+							<TitleTech>HTML5</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoCSS} />
+							<TitleTech>CSS3</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoSASS} />
+							<TitleTech>SASS</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoBootstrap} />
+							<TitleTech>Bootstrap</TitleTech>
+						</WrapperTech>
+					</TextCompetenciesB>
+					<TextCompetenciesC>
+						<WrapperTech>
+							<img src={logoNodeJS} />
+							<TitleTech>NodeJS</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoPHP} />
+							<TitleTech>PHP</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoJS} />
+							<TitleTech>JavaScript</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoJS} />
+							<TitleTech>JavaScript</TitleTech>
+						</WrapperTech>
+					</TextCompetenciesC>
 					<TextCompetencies>
-						HTML5, CSS3/SCSS/LESS, JavaScript, JSX, React, JSON, XML, Webpack,
-						Unity
+					<WrapperTech>
+							<img src={logoJS} />
+							<TitleTech>JavaScript</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
+							<img src={logoJS} />
+							<TitleTech>JavaScript</TitleTech>
+						</WrapperTech>
 					</TextCompetencies>
 
-					<TitleTextCompetencies>BACKEND:</TitleTextCompetencies>
+					{/* <TitleTextCompetencies>BACKEND:</TitleTextCompetencies>
 					<TextCompetencies>
 						Java, PHP, C#, C, C++, MySQL, Postgre, NodeJS, Express, Nginx,
 						Linux, REST, SOAP, Apache
@@ -61,8 +134,9 @@ const About = () => {
 
 					<TitleTextCompetencies>OTHER:</TitleTextCompetencies>
 					<TextCompetencies>
-					Illustrator, Photoshop, Adobe XD, Premiere, After Effects, Final Cut, GitHub/GitLab, Jenkins, Agile, Trello
-					</TextCompetencies>
+						Illustrator, Photoshop, Adobe XD, Premiere, After Effects, Final
+						Cut, GitHub/GitLab, Jenkins, Agile, Trello
+					</TextCompetencies> */}
 				</CompetenciesContainer>
 			</Competencies>
 		</AboutLayout>

@@ -122,7 +122,7 @@ export const Competencies = styled.div`
 	padding-top: 20px;
 	padding-bottom: 50px;
 
-	background-color: var(--color-pink);
+	background-color: var(--color-black);
 `;
 
 export const TitleCompetencies = styled.div`
@@ -135,11 +135,14 @@ export const TitleCompetencies = styled.div`
 `;
 
 export const CompetenciesContainer = styled.div`
-	text-align: left;
+	/* text-align: left;
 	display: inline-block;
 	margin-top: 32px;
 	margin-left: 14px;
-	margin-right: 14px;
+	margin-right: 14px; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 `;
 
 export const TitleTextCompetencies = styled.div`
@@ -150,11 +153,57 @@ export const TitleTextCompetencies = styled.div`
 	color: var(--color-white);
 `;
 
-export const TextCompetencies = styled.p`
-	color: hsla(0, 0%, 100%, 0.85);
+export const TextCompetencies = styled.div`
+	/* color: hsla(0, 0%, 100%, 0.85);
 	margin-top: 0.4rem;
 	margin-bottom: 1.5rem;
 	font-size: 14px;
 	letter-spacing: 0.15em;
-	font-weight: 400;
+	font-weight: 400; */
+	margin-left: 30px;
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
 `;
+
+export const TextCompetenciesB = styled.div`
+	/* color: hsla(0, 0%, 100%, 0.85);
+	margin-top: 0.4rem;
+	margin-bottom: 1.5rem;
+	font-size: 14px;
+	letter-spacing: 0.15em;
+	font-weight: 400; */
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+`;
+
+export const TextCompetenciesC = styled.div`
+	/* color: hsla(0, 0%, 100%, 0.85);
+	margin-top: 0.4rem;
+	margin-bottom: 1.5rem;
+	font-size: 14px;
+	letter-spacing: 0.15em;
+	font-weight: 400; */
+	margin-left: 30px;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+`;
+
+export const WrapperTech = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	width: 150px;
+	height: 150px;
+`
+
+export const TitleTech = styled.p`
+	margin: 10px 0px 0px 0px;
+    color: white;
+`
+
+
