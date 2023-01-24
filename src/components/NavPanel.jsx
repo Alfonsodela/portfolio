@@ -23,16 +23,19 @@ const NavPanel = () => {
 			<NavScreenLayout open={showMenu}>
 				<MenuItem>
 					<MenuItemLink href='#home' onClick={() => setShowMenu(!showMenu)}>
-						Home
-					</MenuItemLink>
-					<MenuItemLink href='#projects' onClick={() => setShowMenu(!showMenu)}>
-						Projects
+						Inicio
 					</MenuItemLink>
 					<MenuItemLink href='#about' onClick={() => setShowMenu(!showMenu)}>
-						About
+						Sobre Mi
+					</MenuItemLink>
+					<MenuItemLink href='#projects' onClick={() => setShowMenu(!showMenu)}>
+						Portfolio
+					</MenuItemLink>
+					<MenuItemLink href='#competencies' onClick={() => setShowMenu(!showMenu)}>
+						Tecnologías
 					</MenuItemLink>
 					<MenuItemLink href='#contact' onClick={() => setShowMenu(!showMenu)}>
-						Contact
+						Contacto
 					</MenuItemLink>
 				</MenuItem>
 			</NavScreenLayout>

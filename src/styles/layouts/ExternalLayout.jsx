@@ -1,13 +1,20 @@
 import styled from '@emotion/styled';
+import { mobileUp, tabletUp } from '../breakpoints/breakpoints';
 
 export const ExternalLayout = styled.div`
+	${mobileUp} {
+		display: none;
+	}
+	${tabletUp} {
+		display: flex;
+	}
+
 	display: flex;
-	/* justify-content: space-around; */
 	justify-content: flex-end;
 	align-items: center;
 
 	width: 100%;
-	height: 24px;
+	height: 35px;
 	position: fixed;
 	z-index: 999;
 
@@ -26,7 +33,6 @@ export const NavExternalLayout = styled.div`
 	margin-right: 30px;
 `;
 export const NavExternalAbout = styled.a`
-	margin-top: 20px;
 	padding: 20px;
 	text-decoration: none;
 	cursor: pointer;

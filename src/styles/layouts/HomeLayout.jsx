@@ -54,3 +54,11 @@ export const WrappLogoBN = styled.div`
 	flex-direction: column;
 	align-items: center;
 `;
+
+export const WrappIcon = styled.div`
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90px;
+
+`

@@ -16,7 +16,7 @@ export const NavPanelMenu = styled.div`
 
     background-color: var(--color-white);
 
-    ${tabletUp, laptoptopUp, desktoptopUp} {
+    ${tabletUp} {
         display: none;
     }
 `

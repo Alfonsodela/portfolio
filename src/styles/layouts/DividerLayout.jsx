@@ -14,10 +14,10 @@ export const DividerLayout = styled.div`
 		background: var(--color-white);
 	}
 
-	${laptoptopUp} {
+	/* ${laptoptopUp} {
 		min-height: 250px;
 		background: var(--color-pink);
-	}
+	} */
 `;
 
 export const KeyboardContainer = styled.div`
@@ -51,10 +51,10 @@ export const KeyboardContainer = styled.div`
 		display: none;
 	}
 
-	${laptoptopUp} {
+	/* ${laptoptopUp} {
 		display: flex;
 		margin-top: -50px;
-	}
+	} */
 `;
 
 export const HybridBottomContainer = styled.div`
@@ -63,10 +63,10 @@ export const HybridBottomContainer = styled.div`
 	z-index: 998;
 
 	${mobileUp} {
-		margin-top: -20px;
+		margin-top: -18px;
 	}
 
-	${desktoptopUp} {
+	/* ${desktoptopUp} {
 		margin-top: -50px;
-	}
+	} */
 `;

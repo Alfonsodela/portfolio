@@ -10,7 +10,7 @@ export const NavScreenLayout = styled.div`
 	z-index: 998;
 	top: 0;
 	left: ${({ open }) => (open ? '0' : '-100%')};
-	transition: 5s all ease;
+	transition: 1s all ease;
 
 	background-color: var(--color-white);
 `;
@@ -31,7 +31,7 @@ export const MenuItemLink = styled.a`
 	text-transform: none;
 	letter-spacing: 0;
 	font-family: Gilroy-Extrabold;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: var(--color-black);
 
 	&:hover {
