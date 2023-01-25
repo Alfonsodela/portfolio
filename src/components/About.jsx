@@ -27,7 +27,11 @@ import logoCSS from '../assets/CSS3_logo.png';
 import logoSASS from '../assets/Sass_.png';
 import logoBootstrap from '../assets/Bootstrap_logo.png';
 import logoNodeJS from '../assets/Node.js_logo.png';
-import logoPHP from '../assets/PHP-logo.png'
+import logoPHP from '../assets/PHP-logo.png';
+import logoMongoDB from '../assets/MongoDB-logo.jpg';
+import logoMySQL from '../assets/MySQL_Logo.png';
+import logoGit from '../assets/Git_icon.png';
+import logoFigma from '../assets/Figma-logo.png';
 
 const About = () => {
 	return (
@@ -59,10 +63,8 @@ const About = () => {
 				</AboutInner>
 			</AboutContainer>
 			<Competencies id='competencies'>
-				{/* <TitleCompetencies>Competencies</TitleCompetencies> */}
+				<TitleCompetencies>Tecnologías</TitleCompetencies>
 				<CompetenciesContainer>
-					{/* <TitleTextCompetencies>FRONTEND:</TitleTextCompetencies> */}
-					
 					<TextCompetenciesB>
 						<WrapperTech>
 							<img src={logoJS} />
@@ -103,40 +105,27 @@ const About = () => {
 							<TitleTech>NodeJS</TitleTech>
 						</WrapperTech>
 						<WrapperTech>
+							<img src={logoMongoDB} />
+							<TitleTech>MongoDB</TitleTech>
+						</WrapperTech>
+
+						<WrapperTech>
+							<img src={logoGit} />
+							<TitleTech>Git</TitleTech>
+						</WrapperTech>
+						<WrapperTech>
 							<img src={logoPHP} />
 							<TitleTech>PHP</TitleTech>
 						</WrapperTech>
 						<WrapperTech>
-							<img src={logoJS} />
-							<TitleTech>JavaScript</TitleTech>
+							<img src={logoMySQL} />
+							<TitleTech>MySQL</TitleTech>
 						</WrapperTech>
 						<WrapperTech>
-							<img src={logoJS} />
-							<TitleTech>JavaScript</TitleTech>
+							<img src={logoFigma} />
+							<TitleTech>Figma</TitleTech>
 						</WrapperTech>
 					</TextCompetenciesC>
-					<TextCompetencies>
-					<WrapperTech>
-							<img src={logoJS} />
-							<TitleTech>JavaScript</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoJS} />
-							<TitleTech>JavaScript</TitleTech>
-						</WrapperTech>
-					</TextCompetencies>
-
-					{/* <TitleTextCompetencies>BACKEND:</TitleTextCompetencies>
-					<TextCompetencies>
-						Java, PHP, C#, C, C++, MySQL, Postgre, NodeJS, Express, Nginx,
-						Linux, REST, SOAP, Apache
-					</TextCompetencies>
-
-					<TitleTextCompetencies>OTHER:</TitleTextCompetencies>
-					<TextCompetencies>
-						Illustrator, Photoshop, Adobe XD, Premiere, After Effects, Final
-						Cut, GitHub/GitLab, Jenkins, Agile, Trello
-					</TextCompetencies> */}
 				</CompetenciesContainer>
 			</Competencies>
 		</AboutLayout>

@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
-import { mobileUp, tabletUp, laptoptopUp } from '../breakpoints/breakpoints';
+import {
+	mobileUp,
+	tabletUp,
+	laptoptopUp,
+	desktoptopUp
+} from '../breakpoints/breakpoints';
 
 export const AboutLayout = styled.div`
 	display: flex;
@@ -71,7 +76,7 @@ export const Profile = styled.div`
 	${tabletUp} {
 		margin-right: 50px;
 	}
-	
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -118,31 +123,41 @@ export const Competencies = styled.div`
 	align-items: center;
 
 	width: 100%;
-	margin-top: 125px;
-	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 120px;
 
 	background-color: var(--color-black);
 `;
 
 export const TitleCompetencies = styled.div`
-	margin-top: 60px;
-	font-size: 1rem;
-	letter-spacing: 0.15em;
-	text-transform: uppercase;
-	font-weight: 600;
 	color: var(--color-white);
+	background-color: var(--color-black);
+	white-space: nowrap;
+	font-family: Gilroy-Extrabold;
+	margin: 55px 0px;
+
+	${mobileUp} {
+		margin-top: 50px;
+		font-size: 28px;
+	}
+
+	${tabletUp} {
+		margin-top: 50px;
+		font-size: 54px;
+	}
 `;
 
 export const CompetenciesContainer = styled.div`
-	/* text-align: left;
-	display: inline-block;
-	margin-top: 32px;
-	margin-left: 14px;
-	margin-right: 14px; */
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+
+	${desktoptopUp} {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 `;
 
 export const TitleTextCompetencies = styled.div`
@@ -154,41 +169,37 @@ export const TitleTextCompetencies = styled.div`
 `;
 
 export const TextCompetencies = styled.div`
-	/* color: hsla(0, 0%, 100%, 0.85);
-	margin-top: 0.4rem;
-	margin-bottom: 1.5rem;
-	font-size: 14px;
-	letter-spacing: 0.15em;
-	font-weight: 400; */
 	margin-left: 30px;
 	display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0.5rem;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 0.5rem;
 `;
 
 export const TextCompetenciesB = styled.div`
-	/* color: hsla(0, 0%, 100%, 0.85);
-	margin-top: 0.4rem;
-	margin-bottom: 1.5rem;
-	font-size: 14px;
-	letter-spacing: 0.15em;
-	font-weight: 400; */
 	display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
+
+	${tabletUp} {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0.5rem;
+	}
 `;
 
 export const TextCompetenciesC = styled.div`
-	/* color: hsla(0, 0%, 100%, 0.85);
-	margin-top: 0.4rem;
-	margin-bottom: 1.5rem;
-	font-size: 14px;
-	letter-spacing: 0.15em;
-	font-weight: 400; */
-	margin-left: 30px;
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
+	margin-top: 30px;
+
+	${tabletUp} {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.5rem;
+		margin-top: 0px;
+		margin-left: 30px;
+	}
 `;
 
 export const WrapperTech = styled.div`
@@ -199,11 +210,9 @@ export const WrapperTech = styled.div`
 	background-color: black;
 	width: 150px;
 	height: 150px;
-`
+`;
 
 export const TitleTech = styled.p`
 	margin: 10px 0px 0px 0px;
-    color: white;
-`
-
-
+	color: white;
+`;
