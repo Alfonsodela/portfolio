@@ -18,22 +18,31 @@ import {
 } from '../styles/layouts/AboutLayout';
 import { HomeTitle } from '../styles/layouts/AboutLayout';
 import foto from '../assets/Foto.jpg';
-import logoJS from '../assets/JavaScript-logo.png';
-import logoReact from '../assets/React-icon.png';
-import logoAngular from '../assets/Angular_logo.png';
-import logoTypeScript from '../assets/Typescript_logo.png';
-import logoHTML from '../assets/html5-logo.png';
-import logoCSS from '../assets/CSS3_logo.png';
-import logoSASS from '../assets/Sass_.png';
-import logoBootstrap from '../assets/Bootstrap_logo.png';
-import logoNodeJS from '../assets/Node.js_logo.png';
-import logoPHP from '../assets/PHP-logo.png';
-import logoMongoDB from '../assets/MongoDB-logo.jpg';
-import logoMySQL from '../assets/MySQL_Logo.png';
-import logoGit from '../assets/Git_icon.png';
-import logoFigma from '../assets/Figma-logo.png';
+import { dataCompetencies, dataCompetenciesB } from '../data/dataCompetencies';
 
 const About = () => {
+	const dataCompetenciesRendered = dataCompetencies.map(
+		({ id, img, title }) => {
+			return (
+				<WrapperTech key={id}>
+					<img src={img} />
+					<TitleTech>{title}</TitleTech>
+				</WrapperTech>
+			);
+		}
+	);
+
+	const dataCompetenciesRenderedB = dataCompetenciesB.map(
+		({ id, img, title }) => {
+			return (
+				<WrapperTech key={id}>
+					<img src={img} />
+					<TitleTech>{title}</TitleTech>
+				</WrapperTech>
+			);
+		}
+	);
+
 	return (
 		<AboutLayout id='about'>
 			<AboutContainer>
@@ -65,66 +74,8 @@ const About = () => {
 			<Competencies id='competencies'>
 				<TitleCompetencies>Tecnologías</TitleCompetencies>
 				<CompetenciesContainer>
-					<TextCompetenciesB>
-						<WrapperTech>
-							<img src={logoJS} />
-							<TitleTech>JavaScript</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoReact} />
-							<TitleTech>React</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoAngular} />
-							<TitleTech>AngularJS</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoTypeScript} />
-							<TitleTech>TypeScript</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoHTML} />
-							<TitleTech>HTML5</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoCSS} />
-							<TitleTech>CSS3</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoSASS} />
-							<TitleTech>SASS</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoBootstrap} />
-							<TitleTech>Bootstrap</TitleTech>
-						</WrapperTech>
-					</TextCompetenciesB>
-					<TextCompetenciesC>
-						<WrapperTech>
-							<img src={logoNodeJS} />
-							<TitleTech>NodeJS</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoMongoDB} />
-							<TitleTech>MongoDB</TitleTech>
-						</WrapperTech>
-
-						<WrapperTech>
-							<img src={logoGit} />
-							<TitleTech>Git</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoPHP} />
-							<TitleTech>PHP</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoMySQL} />
-							<TitleTech>MySQL</TitleTech>
-						</WrapperTech>
-						<WrapperTech>
-							<img src={logoFigma} />
-							<TitleTech>Figma</TitleTech>
-						</WrapperTech>
+					<TextCompetenciesB>{dataCompetenciesRendered}</TextCompetenciesB>
+					<TextCompetenciesC>{dataCompetenciesRenderedB}
 					</TextCompetenciesC>
 				</CompetenciesContainer>
 			</Competencies>

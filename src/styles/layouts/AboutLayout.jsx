@@ -197,8 +197,12 @@ export const TextCompetenciesC = styled.div`
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 0.5rem;
-		margin-top: 0px;
+		margin-top: 30px;
 		margin-left: 30px;
+	}
+
+	${desktoptopUp} {
+		margin-top: 0px;
 	}
 `;
 
