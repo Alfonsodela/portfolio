@@ -9,6 +9,7 @@
 		"lint": "eslint . --ext .js,.jsx --fix"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^3.10.0",
 		"@emotion/react": "^11.10.4",
 		"@emotion/styled": "^11.10.4",
 		"react": "18.2.0",

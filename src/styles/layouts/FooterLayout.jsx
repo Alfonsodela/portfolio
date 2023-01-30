@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { mobileUp, tabletUp } from '../breakpoints/breakpoints';
 
 export const FooterLayout = styled.div`
 	display: inline-flex;
@@ -19,6 +20,14 @@ export const FooterLink = styled.a`
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: .15em;
+
+    ${mobileUp} {
+        display: none;
+    }
+
+    ${tabletUp} {
+        display: inline-block;
+    }
 `;
 
 export const Copyright = styled.p`

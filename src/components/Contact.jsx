@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import styled from '@emotion/styled';
 import {
 	BtnForm,
@@ -11,13 +12,30 @@ import {
 	TextareaForm
 } from '../styles/layouts/ContactLayout';
 import { dataForm } from '../data/dataForm';
+import React, { useRef } from 'react';
 
 const Contact = () => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+	  e.preventDefault();
+  
+	  emailjs.sendForm('service_9e2buor', 'template_qfvt3bu', form.current, 'UQCiPg2V4BR5tEFdu')
+		.then((result) => {
+			console.log(result.text);
+		}, (error) => {
+			console.log(error.text);
+		});
+
+		event.target.reset();
+	};
+
+
 	return (
 		<ContactLayout id='contact'>
 			<ContactTitle>Contáctame</ContactTitle>
 			<Center>
-				<ContactForm class='contact-form' method='post'>
+				<ContactForm class='contact-form' ref={form} onSubmit={sendEmail}>
 					<InputDiv>
 						<LabelForm htmlFor='name_input'>Nombre</LabelForm>
 						<InputForm {...dataForm[0]}></InputForm>

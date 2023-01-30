@@ -39,7 +39,7 @@ export const Center = styled.div`
 	width: 100%;
 `;
 
-export const ContactForm = styled.div`
+export const ContactForm = styled.form`
 	width: 95%;
 	margin: 36px auto auto;
 	text-align: left;
