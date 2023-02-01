@@ -31,7 +31,7 @@ export const MenuItemLink = styled.a`
 	text-transform: none;
 	letter-spacing: 0;
 	font-family: Gilroy-Extrabold;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: var(--color-black);
 
 	&:hover {
