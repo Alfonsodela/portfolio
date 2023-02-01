@@ -46,7 +46,7 @@ const About = () => {
 	return (
 		<AboutLayout id='about'>
 			<AboutContainer>
-				<HomeTitle>About Me</HomeTitle>
+				<HomeTitle>Sobre mí</HomeTitle>
 				<AboutInner>
 					<Profile>
 						<ImgProfile>
@@ -56,16 +56,11 @@ const About = () => {
 					</Profile>
 					<Paragraph>
 						Hola, mi nombre es Alfonso. El desarrollo web se ha convertido en
-						una de mis pasiones, he realizado el bootcamp Full Stack part time
+						una de mis pasiones, he realizado el bootcamp full stack part time
 						de Upgrade realizando proyectos individuales y en equipo con una
 						fuerte curiosidad y motivación. He dedicado mi tiempo a adquirir
 						competencia en todas las complejidades del desarrollo web para
-						mejorar como desarrollador y solucionador de problemas. Soy capaz de
-						crear sitios web limpios y funcionales. Soy competente en mis
-						habilidades de frontend, backend y diseño hasta el punto de poder
-						entregar productos con confianza a mis clientes sabiendo que son de
-						alta calidad. Disfruto ayudar a las marcas a establecer su presencia
-						digital y desarrollar experiencias de usuario agradables.
+						mejorar como desarrollador creando sitios web limpios y funcionales.
 					</Paragraph>
 				</AboutInner>
 			</AboutContainer>
