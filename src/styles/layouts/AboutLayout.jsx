@@ -108,6 +108,7 @@ export const Paragraph = styled.p`
 	line-height: 1.6;
 	word-spacing: 5px;
 	color: var(--color-form);
+	
 
 	${mobileUp} {
 		margin: auto;
