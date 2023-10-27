@@ -10,7 +10,7 @@ const Message = () => {
 			{/* <MessageWrapperBlack></MessageWrapperBlack> */}
 			<MessageWrapperWhite>
 				Especializado en proyectos a medida, enfocado en el desarrollo de
-				websites modernas y atractivas.
+				websites modernos y atractivos.
 			</MessageWrapperWhite>
 		</MessageLayout>
 	);
